@@ -5,7 +5,7 @@ describe('Practice Test Automation Website for Web UI & API', () => {
     //Go to the website
     cy.visit('/');
     
-    //Navigate to test login page
+    //Navigate to test register page
     cy.get('div a').contains(/Test register page/i)
       .should('exist')
       .click();
