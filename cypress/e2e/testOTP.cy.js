@@ -4,7 +4,7 @@ describe('Practice Test Automation Website for Web UI & API', () => {
     //Go to the website
     cy.visit('/');
     
-    //Navigate to test Forgot password page
+    //Navigate to test OTP password page
     cy.get('div a').contains(/OTP: One time password/i)
       .should('exist')
       .click();

@@ -1,10 +1,10 @@
 
 describe('Practice Test Automation Website for Web UI & API', () => {
-  it('Test Dynamic Table Page - Fail Attempt', () => {
+  it('Test Dynamic Table Page', () => {
     //Go to the website
     cy.visit('/');
     
-    //Navigate to test Forgot password page
+    //Navigate to test Dynamic Table page
     cy.get('div a').contains(/Dynamic Table/i)
       .should('exist')
       .click();
